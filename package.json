@@ -1,0 +1,26 @@
+{
+  "name": "tbs5-admin",
+  "version": "1.0.0",
+  "description": "Free nice bootstrap 5 dashboard template.",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "dev": "webpack build --watch",
+    "build:assets": "sass src/scss/style.scss assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.5.16",
+    "css-loader": "^6.7.3",
+    "jest": "^29.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

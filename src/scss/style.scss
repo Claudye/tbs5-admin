@@ -1,0 +1,52 @@
+@import '../bootstrap/bootstrap';
+@import './sidebar';
+@import './bottom-navbar';
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+.content {
+    margin-top: 105px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.top-navbar {
+    top: 58px;
+}
+
+.bottom-navbar,
+.top-navbar {
+    background: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    left: 200px;
+    right: 0;
+}
+
+
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+
+.bg-mi-transparent {
+    background: #f4f4f4;
+}
+
+input:focus,
+.form-control:focus,
+.btn:focus {
+    box-shadow: none;
+}
