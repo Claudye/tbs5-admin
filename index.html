@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <!--
-    Auteur : FASSINOU CLAUDE
-    Profession : Développeur web
--->
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light dashboard FreeFrontend Code</title>
+    <title>Typescript Bootstrap5 | Admin</title>
 
     <link
       rel="stylesheet"
@@ -28,18 +23,51 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
+          data-bs-target="#navbar-collaps"
+          aria-controls="navbar-collaps"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <div class="collapse navbar-collapse" id="navbar-collaps">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Accueil</a>
             </li>
+            <div class="nav-item btn-group">
+              <a
+                type="button"
+                class="nav-link"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                <span class="position-relative">
+                  <i class="bi bi-chat-dots m-1"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    0
+                  </span>
+                </span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button class="dropdown-item" type="button">Action</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Une autre action
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Une action
+                  </button>
+                </li>
+              </ul>
+            </div>
             <div class="nav-item btn-group">
               <a
                 type="button"
@@ -50,18 +78,18 @@
               >
                 <i class="bi bi-three-dots-vertical"></i>
               </a>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                   <button class="dropdown-item" type="button">Action</button>
                 </li>
                 <li>
                   <button class="dropdown-item" type="button">
-                    Another action
+                    Une autre action
                   </button>
                 </li>
                 <li>
                   <button class="dropdown-item" type="button">
-                    Something else here
+                    Une action
                   </button>
                 </li>
               </ul>
@@ -72,6 +100,7 @@
     </nav>
 
     <div class="wrapper">
+      <!--Sidebar-->
       <div class="sideMenu">
         <div class="sidebar">
           <ul class="nav justify-content-center flex-column">
@@ -81,10 +110,10 @@
                   ><i class="bi bi-chevron-right" aria-hidden="true"></i
                 ></span>
                 <i class="bi bi-house" aria-hidden="true"></i>
-                <span>Dashboard</span>
+                <span>Tableau de board</span>
               </a>
               <div class="dropdown-content">
-                <a href="">Statistic </a>
+                <a href="">Statistique </a>
               </div>
             </li>
             <li class="nav-item">
@@ -96,8 +125,21 @@
                 <span> Pages</span>
               </a>
               <div class="dropdown-content">
-                <a href=""> Login</a>
-                <a href=""> Profile</a>
+                <a href=""> Connexion</a>
+                <a href=""> Profil</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropBtn" href="#">
+                <span class="angle"
+                  ><i class="bi bi-chevron-right" aria-hidden="true"></i
+                ></span>
+                <i class="bi bi-calendar-date text-success"></i>
+                <span> Date & Calendrier</span>
+              </a>
+              <div class="dropdown-content">
+                <a href="">Calendrier</a>
+                <a href="">Date</a>
               </div>
             </li>
             <li class="nav-item">
@@ -106,7 +148,7 @@
                   ><i class="bi bi-chevron-right" aria-hidden="true"></i
                 ></span>
                 <i class="bi bi-view-list text-warning"></i>
-                <span> Components</span>
+                <span> Composants</span>
               </a>
               <div class="dropdown-content">
                 <a href="">Login</a>
@@ -118,11 +160,12 @@
       </div>
 
       <div class="content">
+        <!-- Topbar-->
         <div class="top-navbar py-3">
           <ul class="nav nav-tabs align-items-center mx-3">
             <li class="nav-item">
               <a href="#" class="nav-link active">
-                <i class="bi bi-house-door"></i> Home
+                <i class="bi bi-house-door"></i> Accueil
               </a>
             </li>
             <div class="dropdown">
@@ -133,7 +176,7 @@
                 aria-expanded="false"
               >
                 <i class="bi bi-postcard text-success"></i>
-                Post
+                Publications
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -145,7 +188,7 @@
             </div>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="bi bi-rss text-danger"></i> Networks</a
+                <i class="bi bi-rss text-danger"></i> Réseaux</a
               >
             </li>
 
@@ -154,7 +197,7 @@
                 <input
                   type="text"
                   class="form-control bg-mi-transparent border-0"
-                  placeholder="Search ..."
+                  placeholder="Rechercher ..."
                 />
                 <span class="input-group-text border-0 bg-transparent">
                   <i class="bi bi-search"></i>
@@ -166,10 +209,7 @@
         <main>
           <div class="container-fluid my-5">
             <div class="col-md-8 w-100">
-              <p class="my-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                reiciendis nihil soluta
-              </p>
+              <p class="my-3">Lorem ipsum dolor sit amet, consectetur</p>
             </div>
           </div>
         </main>
@@ -224,14 +264,24 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-exclamation-octagon"></i>
+                <span class="position-relative">
+                  <i class="bi bi-exclamation-octagon m-1"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                  >
+                    2
+                  </span>
+                </span>
               </a>
 
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item fw-semibold" href="#"
+                    >Opération échouée</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Un problème signalé</a>
                 </li>
               </ul>
             </li>

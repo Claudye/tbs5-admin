@@ -38,7 +38,8 @@ Si vous n'avez pas une erreur vous pouvez modifier comme vous voulez
 
  1. HTML & SCSS (SASS, CSS)
  2. Typescript
-
+## Démonstration
+[Voir la démonstration](https://tbs5-admin.vercel.app/)
 ## Ressources externes
 - [Bootstrap v5.2.3](https://getbootstrap.com/)
 - [Icônes de Bootstrap v1.10.2](https://icons.getbootstrap.com/)
@@ -46,3 +47,6 @@ Si vous n'avez pas une erreur vous pouvez modifier comme vous voulez
 
 ## Contributions
 Vos contributions seront les bienvenues
+
+## Auteurs
+Ce template est initié par [Claude Fassinou](https://github.com/Claudye)

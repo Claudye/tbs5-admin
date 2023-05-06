@@ -1,5 +1,6 @@
 @import '../bootstrap/bootstrap';
 @import './sidebar';
+@import './navbar';
 @import './bottom-navbar';
 
 body {
@@ -49,4 +50,8 @@ input:focus,
 .form-control:focus,
 .btn:focus {
     box-shadow: none;
+}
+
+.bg-light-2 {
+    background-color: #b8bdd314;
 }
